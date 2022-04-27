@@ -18,13 +18,13 @@ data "aws_ami" "ubuntu" {
   }
 }
 
-# resource "aws_default_subnet" "default_az1" {
-#   availability_zone = "ap-northeast-2a"
+resource "aws_default_subnet" "default_az1" {
+  availability_zone = "ap-northeast-2a"
 
-#   tags = {
-#     Name = "Default subnet for ap-northeast-2"
-#   }
-# }
+  tags = {
+    Name = "Default subnet for ap-northeast-2"
+  }
+}
 
 resource "aws_instance" "ubuntu" {
   ami           = data.aws_ami.ubuntu.image_id
