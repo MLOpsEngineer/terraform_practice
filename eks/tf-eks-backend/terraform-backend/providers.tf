@@ -7,5 +7,5 @@ provider "aws" {
 }
 
 data "aws_availability_zones" "available" {
-  exclude_names = ["ap-northeast-2a","ap-northeast-2c"]
+  exclude_names = ["us-east-2a","us-east-2c"]
 }

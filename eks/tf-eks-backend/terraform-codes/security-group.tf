@@ -1,7 +1,7 @@
 resource "aws_security_group" "test-sg-eks-cluster" {
   name        = "test-sg-eks-cluster"
   description = "security_group for test-eks-cluster"
-  vpc_id      = "<vpc_id>"
+  vpc_id      = "vpc-05796201a6a35df41"
 
   tags = {
     Name = "test-sg-eks-cluster"
